@@ -93,8 +93,14 @@
     &__pages {
         display: flex;
         align-items: center;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
     }
     &__page {
+        flex-shrink: 0;
         font-weight: 600;
         font-size: 14px;
         height: 56px;
