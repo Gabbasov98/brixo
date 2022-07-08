@@ -1,0 +1,92 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body class="page">
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html',{"title":"Описание"})
+        <main class="content">
+            <div class="page__links">
+                @@include('components/page-blocks/_page-links.html')
+            </div>
+
+            <div class="desc-table table__block">
+                <div class="table__scroll">
+                    <div class="desc-table__head">
+                        <div class="desc-table__col desc-table__col1">Table_No</div>
+                        <div class="desc-table__col desc-table__col2">Name</div>
+                        <div class="desc-table__col desc-table__col3">Source</div>
+                        <div class="desc-table__col desc-table__col4">Length</div>
+                        <div class="desc-table__col desc-table__col5">Sorting</div>
+                        <div class="desc-table__col desc-table__col6">Primary Key</div>
+                        <div class="desc-table__col desc-table__col7">
+                            <span>Notes</span>
+                            <a href="" class="table-head__link">
+                                <span>Structure</span>
+                                <img src="img/arrows.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="desc-table__body">
+                        <div class="desc-table__col desc-table__col1">231</div>
+                        <div class="desc-table__col desc-table__col2">231 Graphics / Documents</div>
+                        <div class="desc-table__col desc-table__col3">The allocation of graphics/ documents to picture numbers </div>
+                        <div class="desc-table__col desc-table__col4">400</div>
+                        <div class="desc-table__col desc-table__col5">DocNo, DocType, LangNo</div>
+                        <div class="desc-table__col desc-table__col6">DocNo, DocType, LangNo</div>
+                        <div class="desc-table__col desc-table__col7">
+                            <div class="desc-table__note">
+                                <p>Each DocNo/DocType – combination must contain a data record with the language number 255 (Universal); this will be displayed for languages that are not covered by the delivered languages. The documents have to correspond
+                                    to a document type in data table 014. Currently allowed are BMP, PDF, JPG and URL. <br> The image name has to be stated with the document types BMP, PDF and JPG; the URL has to be stated with the document type URL.
+                                    <br> The maximum permitted size for pictures is 600 x 400 Pixel. <br> It may not be possible to display pictures that contain more than 16 colours/shades of grey on all screens!
+                                </p>
+                                <p>
+                                    <strong>Extended rules for the document type "URL"</strong> <br> With the format 2.4, we offer the possibility to make documents (!) available to the market not only as files via the distribution platform but alternatively
+                                    as a link (URL) to such documents. For this purpose, we have integrated a new document type "URL" into the TAF 2.4 format and equipped the DMM R2 / PMD R2 accordingly. <br> The entire TecAlliance catalog data exchange
+                                    format is designed to exchange documents that can be displayed in catalogs. Information on image type and standardized caption can be used to transmit documents for different applications (image, installation instructions,
+                                    safety data sheet, etc.). <br> The same applies to documents of the document type URL: Documents must be linked that correspond to one of the use cases defined by the exchange format. <br> The following rules apply
+                                    to this document type: <br> - The link must contain a valid URI according to RFC 39865 <br> - Allowed network protocols are http and https <br> - The link must point to a document with one of the following file types:
+                                    BMP, JPG, JPEG, PNG, GIF, PDF, M4A, MP4, MPG, MPEG, AVI <br> - Also allowed are references to Youtube videos. The links must begin with the following string: <br> https://www.youtube.com/embed/ or <br> https://www.youtube-nocoookie.com/embed/
+                                    <br> Please note that Youtube links are not available in some regions of the world. <br> - Further URL prefixes (analogous to youtube) can be requested from the TecAlliance for use, provided that they obey the above
+                                    rules and are used exclusively (!) for the reproduction of media content.
+                                </p>
+                                <p>Each DocNo/DocType – combination must contain a data record with the language number 255 (Universal); this will be displayed for languages that are not covered by the delivered languages. The documents have to correspond
+                                    to a document type in data table 014. Currently allowed are BMP, PDF, JPG and URL. <br> The image name has to be stated with the document types BMP, PDF and JPG; the URL has to be stated with the document type URL.
+                                    <br> The maximum permitted size for pictures is 600 x 400 Pixel. <br> It may not be possible to display pictures that contain more than 16 colours/shades of grey on all screens!
+                                </p>
+                                <p>
+                                    <strong>Extended rules for the document type "URL"</strong> <br> With the format 2.4, we offer the possibility to make documents (!) available to the market not only as files via the distribution platform but alternatively
+                                    as a link (URL) to such documents. For this purpose, we have integrated a new document type "URL" into the TAF 2.4 format and equipped the DMM R2 / PMD R2 accordingly. <br> The entire TecAlliance catalog data exchange
+                                    format is designed to exchange documents that can be displayed in catalogs. Information on image type and standardized caption can be used to transmit documents for different applications (image, installation instructions,
+                                    safety data sheet, etc.). <br> The same applies to documents of the document type URL: Documents must be linked that correspond to one of the use cases defined by the exchange format. <br> The following rules apply
+                                    to this document type: <br> - The link must contain a valid URI according to RFC 39865 <br> - Allowed network protocols are http and https <br> - The link must point to a document with one of the following file types:
+                                    BMP, JPG, JPEG, PNG, GIF, PDF, M4A, MP4, MPG, MPEG, AVI <br> - Also allowed are references to Youtube videos. The links must begin with the following string: <br> https://www.youtube.com/embed/ or <br> https://www.youtube-nocoookie.com/embed/
+                                    <br> Please note that Youtube links are not available in some regions of the world. <br> - Further URL prefixes (analogous to youtube) can be requested from the TecAlliance for use, provided that they obey the above
+                                    rules and are used exclusively (!) for the reproduction of media content.
+                                </p>
+                                <p>Each DocNo/DocType – combination must contain a data record with the language number 255 (Universal); this will be displayed for languages that are not covered by the delivered languages. The documents have to correspond
+                                    to a document type in data table 014. Currently allowed are BMP, PDF, JPG and URL. <br> The image name has to be stated with the document types BMP, PDF and JPG; the URL has to be stated with the document type URL.
+                                    <br> The maximum permitted size for pictures is 600 x 400 Pixel. <br> It may not be possible to display pictures that contain more than 16 colours/shades of grey on all screens!
+                                </p>
+                                <p>
+                                    <strong>Extended rules for the document type "URL"</strong> <br> With the format 2.4, we offer the possibility to make documents (!) available to the market not only as files via the distribution platform but alternatively
+                                    as a link (URL) to such documents. For this purpose, we have integrated a new document type "URL" into the TAF 2.4 format and equipped the DMM R2 / PMD R2 accordingly. <br> The entire TecAlliance catalog data exchange
+                                    format is designed to exchange documents that can be displayed in catalogs. Information on image type and standardized caption can be used to transmit documents for different applications (image, installation instructions,
+                                    safety data sheet, etc.). <br> The same applies to documents of the document type URL: Documents must be linked that correspond to one of the use cases defined by the exchange format. <br> The following rules apply
+                                    to this document type: <br> - The link must contain a valid URI according to RFC 39865 <br> - Allowed network protocols are http and https <br> - The link must point to a document with one of the following file types:
+                                    BMP, JPG, JPEG, PNG, GIF, PDF, M4A, MP4, MPG, MPEG, AVI <br> - Also allowed are references to Youtube videos. The links must begin with the following string: <br> https://www.youtube.com/embed/ or <br> https://www.youtube-nocoookie.com/embed/
+                                    <br> Please note that Youtube links are not available in some regions of the world. <br> - Further URL prefixes (analogous to youtube) can be requested from the TecAlliance for use, provided that they obey the above
+                                    rules and are used exclusively (!) for the reproduction of media content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        @@include('components/page-blocks/_footer.html',{"active":"Описание"})
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

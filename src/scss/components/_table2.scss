@@ -1,0 +1,327 @@
+@import "../vars.scss";
+@import "../mixins";
+.table2,
+.table-structure {
+    min-width: 1200px;
+    .table__col1 {
+        justify-content: unset;
+    }
+    .table__subcol-big {
+        &:nth-child(4) {
+            width: 95px;
+        }
+        &:nth-child(9) {
+            width: 105px;
+        }
+    }
+}
+
+.table3 {
+    .table__col1 {
+        justify-content: unset;
+        .table__subcol-big {
+            &:nth-child(3) {
+                width: 90px;
+            }
+            &:nth-child(5) {
+                width: 135px;
+            }
+            &:nth-child(8) {
+                width: 95px;
+            }
+            &:nth-child(10) {
+                width: 115px;
+            }
+            &:nth-child(11) {
+                width: 100px;
+            }
+            &:nth-child(14) {
+                width: 125px;
+            }
+            &:nth-child(16) {
+                width: 140px;
+            }
+            &:nth-child(17) {
+                width: 150px;
+            }
+            &:nth-child(3),
+            &:nth-child(12),
+            &:nth-child(14),
+            &:nth-child(16),
+            &:nth-child(17) {
+                text-align: left;
+                input {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.table4 {
+    min-width: 800px;
+    .table__col1 {
+        justify-content: unset;
+    }
+}
+
+.table209,
+.table212,
+.table232,
+.table-checking,
+.table5 {
+    min-width: 800px;
+    .table__col1 {
+        justify-content: unset;
+    }
+    th,
+    td {
+        &:nth-child(1) {
+            max-width: 800px;
+        }
+        &:nth-child(2) {
+            width: 100%;
+            max-width: calc(100% - 800px);
+        }
+    }
+}
+
+.table6,
+.table7,
+.table207,
+.table210,
+.table210-2,
+.table211 {
+    min-width: 800px;
+    .table__col1 {
+        justify-content: unset;
+        .table__subcol-big {
+            &:nth-child(11) {
+                width: 100px;
+            }
+        }
+    }
+    th,
+    td {
+        &:nth-child(1) {
+            max-width: 1200px;
+        }
+        &:nth-child(2) {
+            width: 100%;
+            max-width: calc(100% - 1200px);
+        }
+    }
+}
+
+.table211 {
+    .table__col1 {
+        justify-content: unset;
+        .table__subcol-big {
+            &:nth-child(3) {
+                width: 110px;
+            }
+            &:nth-child(5) {
+                .table__input {
+                    width: calc(100% - 21px);
+                }
+            }
+        }
+    }
+}
+
+.table231 {
+    .table__col1 {
+        justify-content: unset;
+        .table__subcol-big {
+            &:nth-child(3) {
+                width: 70px;
+                .table__input {
+                    width: 100%;
+                }
+            }
+            &:nth-child(5) {
+                .table__input {
+                    width: calc(100% - 21px);
+                }
+            }
+            &:nth-child(9) {
+                width: 120px;
+            }
+            &:nth-child(10) {
+                width: 105px;
+            }
+        }
+    }
+}
+
+.table400,
+.table404 {
+    .table {
+        &__col2 {
+            width: unset;
+            .table__subcol-big {
+                width: 110px;
+            }
+        }
+        &__col3 {
+            min-width: unset;
+            .table__subcol-big {
+                &:nth-child(1) {
+                    width: 98px;
+                }
+            }
+        }
+        &__col4 {
+            display: flex;
+            align-items: center;
+        }
+    }
+    th,
+    td {
+        &:nth-child(3) {
+            max-width: 300px;
+        }
+        &:nth-child(4) {
+            width: 100%;
+        }
+    }
+}
+
+.table410 {
+    .table {
+        &__col1 {
+            justify-content: unset;
+        }
+        &__col2 {
+            width: unset;
+            .table__subcol-big {
+                width: 110px;
+            }
+        }
+        &__col3 {
+            min-width: unset;
+            .table__subcol-big {
+                &:nth-child(1) {
+                    width: 98px;
+                }
+            }
+        }
+        &__col4 {
+            display: flex;
+            align-items: center;
+        }
+    }
+    th,
+    td {
+        &:nth-child(3) {
+            max-width: 300px;
+        }
+        &:nth-child(4) {
+            width: 100%;
+        }
+    }
+}
+
+.table-checking {
+    .table-head {
+        .table__col1 {
+            padding-left: 80px;
+        }
+    }
+}
+
+.table-guide,
+.table210-2 {
+    min-width: 100%;
+    .table-head {
+        .table__col1 {
+            padding-left: 25px;
+        }
+    }
+    .table__subcol-big {
+        text-align: left;
+        &:nth-child(1) {
+            padding-left: 25px;
+            width: 140px;
+        }
+        input {
+            text-align: left;
+        }
+        &:nth-child(3) {
+            width: 255px;
+        }
+    }
+}
+
+.table210-2 {
+    .table-head__link {
+        margin: 0 0 0 auto;
+        svg {
+            margin-left: 6px;
+        }
+    }
+}
+
+.table-guide {
+    min-width: 100%;
+    // width: 100%;
+    .table__col1 {
+        justify-content: unset;
+    }
+    .table-head {
+        .table__col1 {
+            padding-left: 25px;
+        }
+    }
+    .table__subcol-big {
+        text-align: left;
+        &:nth-child(1) {
+            padding-left: 25px;
+            width: 90px;
+        }
+        &:nth-child(2) {
+            width: 110px;
+        }
+        input {
+            text-align: left;
+        }
+        &:nth-child(3) {
+            width: 190px;
+        }
+        &:nth-child(4) {
+            width: 200px;
+            flex-grow: 1;
+        }
+    }
+}
+
+.table-structure {
+    &::before {
+        display: none;
+    }
+    thead {
+        tr {
+            background: #fff !important;
+        }
+    }
+    .table__subcol-big {
+        &:nth-child(3) {
+            .table__input {
+                width: 100%;
+            }
+        }
+        &:nth-child(9),
+        &:nth-child(10) {
+            text-align: left;
+            input {
+                text-align: left;
+            }
+        }
+        &:nth-child(9) {
+            width: 470px;
+        }
+        &:nth-child(10) {
+            width: 650px;
+        }
+    }
+}
