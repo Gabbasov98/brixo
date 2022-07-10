@@ -15,3 +15,10 @@ if (select) {
         select.classList.toggle("open")
     }
 }
+
+let headerUserBtn = document.querySelector(".header__user")
+if (headerUserBtn) {
+    headerUserBtn.onclick = function() {
+        headerUserBtn.classList.toggle("open")
+    }
+}

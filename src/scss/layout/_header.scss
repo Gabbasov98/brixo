@@ -5,6 +5,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
     &__right,
     &__left {
@@ -47,6 +48,15 @@
     &__user {
         display: flex;
         align-items: center;
+        flex-shrink: 0;
+        position: relative;
+        cursor: pointer;
+        &.open{
+            &~.header__dropdown{
+                opacity: 1;
+                pointer-events: unset;
+            }
+        }
         &-icon {
             padding: 0;
             width: 52px;
@@ -90,6 +100,49 @@
             top: 50%;
             transform: translateY(-50%);
             position: absolute;
+        }
+    }
+    &__dropdown{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        margin-top: 12px;
+        width: 226px;
+        box-shadow: 0px 4px 13px #D1D2FF;
+        border-radius: 6px;
+        border: 1px solid $primary;
+        padding-top: 20px;
+        z-index: 10;
+        background: #FFFFFF;
+        opacity: 0;
+        pointer-events: none;
+        &-title{
+            padding:0 20px 5px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 121.4%;
+            color: #80819E;
+            text-transform: uppercase;
+        }
+        &-item{
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            &:not(:last-child){
+                border-bottom: 1px solid #D3D9EB;
+            }
+            &--logout{
+                color: #E21A1A;
+            }
+            &:hover{
+                background: #F7F9FF;
+            }
+            svg{
+                margin-right: 7px;
+            }
         }
     }
 }
